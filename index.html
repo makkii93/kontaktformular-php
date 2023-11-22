@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" /> <!-- Verknüpfung mit dem externen CSS-Stylesheet -->
+  <title>Kontaktformular</title>
+</head>
+<body>
+  <h1>Kontaktformular</h1>
+
+  <form action="index.php" method="post"> <!-- Einrichten des Formulars, das bei der Absendung die Daten an index.php sendet -->
+    <div class="elem-group">
+      <label for="name">Ihre Name:</label> <!-- Etikett für den Namensbereich -->
+      <input type="text" id="name" name="visitor_name" placeholder="Max Mustermann" pattern=[A-Z\sa-z]{3,20} required> <!-- Eingabefeld für den Namen -->
+    </div>
+    <div class="elem-group">
+      <label for="email">Ihre E-Mail:</label> <!-- Etikett für die E-Mail-Adresse -->
+      <input type="email" id="email" name="visitor_email" placeholder="max.mustermann@email.com" required> <!-- Eingabefeld für die E-Mail-Adresse -->
+    </div>
+    <div class="elem-group">
+      <label for="department-selection">Ihre aufgaben:</label> <!-- Etikett für die Auswahl der Aufgabe -->
+      <select id="department-selection" name="concerned_department" required> <!-- Dropdown-Menü für die Auswahl der Aufgabe -->
+          <option value="">IT-Leiter</option> <!-- Standardoption "IT-Leiter" -->
+          <option value="assistent">Assistent</option> <!-- Option "Assistent" -->
+          <option value="marketing">Marketing</option> <!-- Option "Marketing" -->
+          <option value="support">Support</option> <!-- Option "Support" -->
+      </select>
+    </div>
+    <div class="elem-group">
+      <label for="title">Grund für die Kontaktaufnahme:</label> <!-- Etikett für den Betreff -->
+      <input type="text" id="title" name="email_title" required placeholder="Kann mein Passwort nicht zurücksetzen" pattern=[A-Za-z0-9\s]{8,60}> <!-- Eingabefeld für den Betreff -->
+    </div>
+    <div class="elem-group">
+      <label for="message">Schreiben sie uns eine nachricht:</label> <!-- Etikett für die Nachricht -->
+      <textarea id="message" name="visitor_message" placeholder="Was möchten sie uns mittetilen" required></textarea> <!-- Bereich für die Nachricht -->
+    </div>
+    <button type="submit">Senden</button> <!-- Senden-Button für das Formular -->
+  </form>
+  
+</body>
+</html>

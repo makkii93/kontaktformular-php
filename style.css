@@ -1,0 +1,46 @@
+/* Setzen des oberen und unteren Abstands für das Element mit der Klasse 'elem-group' */
+div.elem-group {
+    margin: 40px 0;
+  }
+  
+  /* Anweisungen für Label-Elemente */
+  label {
+    display: block; /* Label wird als Blockelement angezeigt, um ein neues Zeilenlayout zu erzwingen */
+    font-family: 'Aleo'; /* Verwendung der Schriftart 'Aleo' */
+    padding-bottom: 4px; /* Abstand unterhalb des Labels */
+    font-size: 1.25em; /* Festlegen der Schriftgröße */
+  }
+  
+  /* Stil für Eingabefelder, Auswahlboxen und Textareas */
+  input, select, textarea {
+    border-radius: 2px; /* Abrundung der Ecken */
+    border: 1px solid #ccc; /* Festlegen einer dünnen Linie als Rahmen */
+    box-sizing: border-box; /* Sizing des Elements auf den Inhalt und die Grenze setzen */
+    font-size: 1.25em; /* Festlegen der Schriftgröße */
+    font-family: 'Aleo'; /* Verwendung der Schriftart 'Aleo' */
+    width: 500px; /* Festlegen der Breite auf 500 Pixel */
+    padding: 8px; /* Innenabstand des Elements */
+  }
+  
+  /* Spezielle Anweisungen für Textareas */
+  textarea {
+    height: 250px; /* Festlegen der Höhe auf 250 Pixel */
+  }
+  
+  /* Stil für den Button */
+  button {
+    height: 50px; /* Festlegen der Höhe auf 50 Pixel */
+    background: rgb(0, 0, 0); /* Hintergrundfarbe schwarz */
+    color: white; /* Textfarbe weiß */
+    border: 2px solid rgb(255, 255, 255); /* Festlegen einer weißen Linie als Rahmen */
+    font-size: 1.25em; /* Festlegen der Schriftgröße */
+    font-family: 'Aleo'; /* Verwendung der Schriftart 'Aleo' */
+    border-radius: 4px; /* Abrundung der Ecken */
+    cursor: pointer; /* Anzeige eines Zeigers beim Überfahren */
+  }
+  
+  /* Stiländerung beim Überfahren des Buttons */
+  button:hover {
+    border: 2px solid black; /* Änderung des Rahmenstils beim Überfahren */
+  }
+  
